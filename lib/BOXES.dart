@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Secondscreen.dart';
+
 class boxes extends StatefulWidget {
   const boxes({Key? key}) : super(key: key);
 
@@ -160,6 +162,12 @@ class _boxesState extends State<boxes> {
             ],
           ),
         ),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => screen()));
+            },
+            child: Text("Click"))
       ],
     );
   }
